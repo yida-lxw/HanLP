@@ -23,6 +23,7 @@ public class DemoTokenizerConfig
     {
         String text = "泽田依子是上外日本文化经济学院的外教";
         System.out.println(StandardTokenizer.segment(text));
+        //设置人名、地名、机构名自动识别
         StandardTokenizer.SEGMENT.enableAllNamedEntityRecognize(true);
         System.out.println(StandardTokenizer.segment(text));
     }
